@@ -1,0 +1,42 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font: 14px Helvetica, Arial, Sans-Serif;
+}
+a {
+    text-decoration: none;
+}
+.suefeng-demo-navi {
+    line-height: 24px;
+    font-size: 11px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    z-index: 9999;
+    position: relative;
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+
+.suefeng-demo-navi a {
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    color: #333;
+    display: inline-block;
+}
+
+.suefeng-demo-navi a:hover {
+    background: rgba(255,255,255,0.8);
+    color: #000;
+}
+
+.suefeng-demo-navi span.right {
+    float: right;
+}
+
+.suefeng-demo-navi span.right a {
+    float: left;
+    display: block;
+}

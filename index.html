@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Slot Machine</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Alfa+Slab+One|Share+Tech+Mono">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="slot-machine-styles.css">
+  </head>
+<body>
+<div class="suefeng-demo-navi">
+  <a href="http://suefeng.net/?p=1574"><strong>&laquo; Previous Demo: </strong>Notepad++</a>
+  <span class="right">
+    <a href="http://suefeng.net/?p=1675"><strong>Back to the Slot Machine Puzzle Article</strong></a>
+  </span>
+</div>
+<div id="machine">
+  <div id="machine-upper-part">
+    <div id="machine-upper-part-inside">
+        <input type="text" name="input" id="machine-marquee" placeholder="Enter your guess">
+    </div>
+  </div>
+  <div id="machine-body">
+    <div id="framework-central">
+      <div id="framework-left">
+        <div class="framework-top"></div>
+        <div class="framework-middle"></div>
+        <div class="framework-bottom"></div>
+      </div>
+      <div id="framework-center">
+        <!-- script will generate reels here -->
+      </div>
+      <div id="framework-right">
+        <div class="framework-top"></div>
+        <div class="framework-middle"></div>
+        <div class="framework-bottom"></div>
+      </div>
+    </div>
+    <div id="tries"><div id="counter"></div> tries</div>
+  </div>
+  <div id="machine-lever">
+    <div id="lever-ball"></div>
+    <div id="lever-bar"></div>
+    <div class="lever-base big">
+            <div class="lever-base-inner"></div>
+    </div>
+    <div class="lever-base small">
+            <div class="lever-base-inner"></div>
+    </div>
+
+  </div>
+</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="slot-machine-script.js"></script>
+<script>
+$('#framework-center').slot_machine({answer: 'apple', code: 'red', tries: '10'});
+</script>
+</body>
+</html>
